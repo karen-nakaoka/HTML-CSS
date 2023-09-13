@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/* 
+    #  = id
+    .  = class
+    :  = pseudo-class
+    :: = pseudo-elemento
+    >  = filho
+*/
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: rgb(76, 86, 62);
+}
+
+#principal {
+    text-align: center;
+    background-color: rgb(222, 251, 178);
+}
+
+.destaque {
+    background-color: rgba(87, 116, 28, 0.281);
+    height: 70px;
+    border: 5px solid gray;
+}
+
+.basico {
+    color: rgb(216, 173, 66);
+}
+
+.intermediario {
+    color: rgb(132, 90, 12);
+}
+
+.avancado {
+    color: rgb(143, 2, 2);
+}
+
+p {
+    text-align: justify;
+    text-indent: 15px;
+}
+
+div {
+    text-indent: 15px;
+}
+
+div:hover {
+    color: red;
+}
+
+div > p {
+    display: none;
+}
+
+div:hover > p {
+    display: block;
+    color: black;
+    background-color: red;
+    width: 300px;
+    height: 25px;
+    border: 1px solid black;
+}
+
+a {
+    color: blueviolet;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a:active {
+    color: rgba(0, 174, 255, 0.964);
+}
+
+a::after {
+    content: " [link] ✿";
+}
+
+a::before {
+    content: "✿ "
+}

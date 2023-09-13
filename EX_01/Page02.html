@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+</head>
+<body>
+    <h1>Segunda página</h1>
+    <p>Está é a segunda página do site. <a href="index.html">Clique aqui</a> para voltar para a primeira página.</p>
+
+    <h2>Imagem dinâmica</h2>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="midia/imagem-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="midia/imagem-m.png" type="image/png">
+        <img src="midia/imagem-g.png" alt="imagem flexível">
+    </picture>
+
+    <h2>Áudio</h2>
+    <p>Vamos aprender a reproduzir áudios no HTML5</p>
+    <audio src="midia/audio-jazz.mp3" controls></audio>
+    <!--OU-->
+    <audio preload="metadata" controls>
+        <source src="midia/audio-jazz.mp3" type="audio/mpeg">
+        <source src="midia/audio-jazz.ogg" type="audio/ogg">
+        <source src="midia/audio-jazz.wav" type="audio/wav">
+    </audio>
+    <!--MP3 WAV OGG-->
+
+    <h2>Vídeo em hospedagem própria</h2>
+    <p>Vídeo hospedado no próprio servidor</p>
+    <video src="midia/video-cha.mp4" controls width="500"></video>
+    <!--OU-->
+    <video controls width="500" poster="midia/imagem-cha.jpeg">
+        <source src="midia/video-cha.mp4" type="video/mp4">
+        <source src="midia/video-cha.mpv" type="video/mp4">
+        <source src="midia/video-cha.webm" type="video/webm">
+        <source src="midia/video-cha.ogv" type="video/ogg">
+    </video>
+
+    <h2>Vídeos externos</h2>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/4zwHs2QMvzY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>
